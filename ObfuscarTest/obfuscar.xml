@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Obfuscator>
+  <Var name="InPath" value="." />
+  <Var name="OutPath" value=".\Obfuscator_Output" />
+  <AssemblySearchPath path="$(InPath)\Builds\Game_Data\Managed\" />
+  <Module file="$(InPath)\Builds\Game_Data\Managed\Assembly-CSharp.dll">
+    <SkipField type="ObfuscarConfigInfo" attrib="" name="_obfuscarXmlFileSaveName" />
+    <SkipField type="ObfuscarConfigInfo" attrib="" name="_obfuscarModuleIgnoreAttributes" />
+    <SkipField type="ObfuscarConfigInfo" attrib="" name="_obfuscarToolFilePath" />
+    <SkipField type="TestLogic" attrib="" name="IntA" />
+    <SkipField type="TestLogic" attrib="" name="IntB" />
+    <SkipField type="TestLogic" attrib="" name="SumData" />
+    <SkipField type="TestLogic" attrib="" name="MultiplyData" />
+  </Module>
+  <Module file="$(InPath)\Builds\Game_Data\Managed\Plugins\CSDll.dll" />
+  <Var name="HidePrivateApi" value="true" />
+  <Var name="KeepPublicApi" value="false" />
+</Obfuscator>
